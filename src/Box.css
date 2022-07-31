@@ -33,6 +33,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: 15px;
   }
   
   .formDiv {
@@ -44,6 +45,11 @@
   
   .buttonClass {
     width: 350px;
+  }
+  
+  .divClass {
+    border-radius: 10px;
+    margin: 10px;
   }
   
   @keyframes App-logo-spin {

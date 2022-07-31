@@ -31,17 +31,21 @@
 .forma {
   display: flex;
   flex-direction: row;
+  padding: 5px;
 }
 
 .formDiv {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  margin: 5px;
 }
 
 .buttonClass {
   width: 350px;
+}
+
+.divClass {
+  border-radius: 10px;
 }
 
 @keyframes App-logo-spin {
