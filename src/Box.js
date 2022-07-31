@@ -8,14 +8,10 @@ function Box({item, list, setList}) {
     const removeButton = (e, numberToDelete) => {
         setList(current =>
         current.filter(list => {
-            return list.number !== numberToDelete;
+            return list.number !== val.number;
         }));
-
-        console.log(list);
-
-        alert('asdasdas');
-
     }
+    
     return (
         <div className='divClass' style={{backgroundColor: 'white'}}>
       <form className='forma'>
@@ -32,7 +28,7 @@ function Box({item, list, setList}) {
             {val.city}
         </div>
         <div className='formDiv' style={{alignSelf: 'flex-end', width: '15%'}}>
-          <button type='button' className='btn btn-primary' onClick={() => removeButton(val.number)}>Remove</button>
+          <button type='button' value={val.number} className='btn btn-primary' onClick={removeButton}>Remove</button>
         </div>
       </form>
     </div>
